@@ -48,7 +48,7 @@ const (
 type Inputs struct {
 	ArchivePath         string `env:"archive_path,dir"`
 	ProductToDistribute string `env:"product,opt[app,app-clip]"`
-	DistributionMethod  string `env:"distribution_method,opt[development,app-store,ad-hoc,enterprise]"`
+	DistributionMethod  string `env:"distribution_method,opt[development,app-store-connect,ad-hoc,enterprise]"`
 	// Automatic code signing
 	CodeSigningAuthSource     string          `env:"automatic_code_signing,opt[off,api-key,apple-id]"`
 	CertificateURLList        string          `env:"certificate_url_list"`
